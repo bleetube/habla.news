@@ -23,11 +23,14 @@ export const relayListAtom = atomWithLocalStorage<NostrEvent | null>(
   null
 );
 export const defaultRelays = [
+/*
   "wss://relay.snort.social",
   "wss://relay.damus.io",
   "wss://nostr.mom",
   "wss://nos.lol",
   "wss://offchain.pub",
+*/
+  "wss://bitcoiner.social",
 ];
 export const relaysAtom = atom<string[]>((get) => {
   const relayListEv = get(relayListAtom);
